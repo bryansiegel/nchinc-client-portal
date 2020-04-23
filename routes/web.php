@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('dashboard');
 });
+
+//Documents
+Route::get('documents/', 'DocumentsController@index');
+
+//Forms
+Route::get('forms/', 'FormsController@index');
+
