@@ -3,24 +3,22 @@
 @section('content')
 
 <div class="container justify-content-center">
-    <h1>Documents</h1>
+    <div><h1>Todos</h1></div>
+
+
     <table class="table">
         <thead class="thead-dark">
             <tr>
                 <th>Title</th>
-                <th>Document</th>
-                <th>Url</th>
-                <th>Active?</th>
+                <th>Completed?</th>
             </tr>
         </thead>
         <tbody>
-            @foreach($documents as $document)
+            @foreach($todo as $todos)
             <tr>
-                <td>{{ $document->title }}</td>
-                <td>{{ $document->document_text }}</td>
-                <td><a href="{{ $document->url }}">{{ $document->url }}</a></td>
+                <td>{{ $todos['title'] }}</td>
                 <td>
-                    @if($document->active == 1)
+                    @if($todos['completed'] == 1)
                         True
                     @else
                         False

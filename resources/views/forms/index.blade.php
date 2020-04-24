@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container justify-content-center">
-    <div><h1>Forms</h1> <span style="float: right;margin-top: -45px; margin-bottom: 25px;"><a href="" class="btn btn-primary">Create A Form</a></span></div>
+    <div><h1>Forms</h1></div>
 
 
     <table class="table">
