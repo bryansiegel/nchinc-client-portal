@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Form;
+
 use Illuminate\Http\Request;
 
 class FormsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +19,9 @@ class FormsController extends Controller
      */
     public function index()
     {
-        //
+        $forms = Form::all();
+
+        return view('forms.index', compact('forms'));
     }
 
     /**

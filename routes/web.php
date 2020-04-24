@@ -16,14 +16,14 @@
 //     return view('dashboard');
 // })->name('dashboard')->middleware('auth');
 
-Route::get('/', 'DashboardController@index')->name('dashboard')->middleware('auth');
+Route::get('/', 'DashboardController@index')->name('dashboard');
 
 
 //Documents
-Route::get('documents/', 'DocumentsController@index')->name('documents')->middleware('auth');
+Route::get('documents/', 'DocumentsController@index')->name('documents');
 
 //Forms
-Route::get('forms/', 'FormsController@index')->name('forms')->middleware('auth');
+Route::get('forms/', 'FormsController@index')->name('forms');
 
 
 Auth::routes([ 'register' => false ]);
