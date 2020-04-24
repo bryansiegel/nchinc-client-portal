@@ -13,12 +13,12 @@ class DocumentTest extends TestCase
      *
      * @return void
      */
-    public function testHome()
-    {
-        $response = $this->get('/');
-        $response->assertStatus(200);
-        $response->assertViewIs('dashboard');
-    }
+    // public function testHome()
+    // {
+    //     $response = $this->get('/');
+    //     $response->assertStatus(200);
+    //     $response->assertViewIs('dashboard');
+    // }
 
     public function testDocumentsIndex()
     {

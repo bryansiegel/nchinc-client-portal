@@ -21,3 +21,7 @@ Route::get('documents/', 'DocumentsController@index');
 //Forms
 Route::get('forms/', 'FormsController@index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
