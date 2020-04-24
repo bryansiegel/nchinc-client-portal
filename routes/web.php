@@ -11,17 +11,17 @@
 |
 */
 
+//Dashboard
 Route::get('/', function () {
     return view('dashboard');
-});
+})->name('dashboard')->middleware('auth');
+
 
 //Documents
-Route::get('documents/', 'DocumentsController@index');
+Route::get('documents/', 'DocumentsController@index')->name('documents')->middleware('auth');
 
 //Forms
-Route::get('forms/', 'FormsController@index');
+Route::get('forms/', 'FormsController@index')->name('forms')->middleware('auth');
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes([ 'register' => false ]);
