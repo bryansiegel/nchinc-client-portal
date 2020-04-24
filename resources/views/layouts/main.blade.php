@@ -19,7 +19,7 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="documents/"><i class="fas fa-user"></i><span>Documents</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="forms/"><i class="fas fa-table"></i><span>Forms</span></a></li>
                 </ul>

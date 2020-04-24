@@ -12,9 +12,11 @@
 */
 
 //Dashboard
-Route::get('/', function () {
-    return view('dashboard');
-})->name('dashboard')->middleware('auth');
+// Route::get('/', function () {
+//     return view('dashboard');
+// })->name('dashboard')->middleware('auth');
+
+Route::get('/', 'DashboardController@index')->name('dashboard')->middleware('auth');
 
 
 //Documents
