@@ -16,30 +16,20 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($documents as $document)
             <tr>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
+                <td>{{ $document->title }}</td>
+                <td>{{ $document->document_text }}</td>
+                <td><a href="{{ $document->url }}">{{ $document->url }}</a></td>
+                <td>
+                    @if($document->active == 1)
+                        True
+                    @else
+                        False
+                    @endif
+                </td>
             </tr>
-                        <tr>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
-            </tr>
-                        <tr>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
-            </tr>
-                        <tr>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
-                <td>title</td>
-            </tr>
+            @endforeach
         </tbody>
     </table>
 

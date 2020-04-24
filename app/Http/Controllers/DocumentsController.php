@@ -13,8 +13,8 @@ class DocumentsController extends Controller
      */
     public function index()
     {
-        $document = Document::where('active', true);
-        return view('documents.index');
+        $documents = Document::all();
+        return view('documents.index', compact('documents'));
     }
 
     /**
